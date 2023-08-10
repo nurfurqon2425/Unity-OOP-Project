@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 8971614969819264750}
   - component: {fileID: 3873987931040247399}
   - component: {fileID: 981246242606285081}
+  - component: {fileID: 8721981963485390970}
   m_Layer: 0
   m_Name: Shooter
   m_TagString: Untagged
@@ -125,7 +126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8297697665448672904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -197,3 +198,17 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &8721981963485390970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297697665448672904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e88cef58408564581081a5853e9e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 4034523103645149393, guid: 4017293822c3e9b4fafec285b2af5c9c, type: 3}
+  barrel: {fileID: 1371431032425031570}

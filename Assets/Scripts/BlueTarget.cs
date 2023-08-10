@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlueTarget : BaseTarget
+public class BlueTarget : BaseTarget //INHERITANCE
 {
     private Rigidbody targetRb;
 
@@ -27,6 +27,7 @@ public class BlueTarget : BaseTarget
         MoveTarget();
     }
 
+    //POLYMORPHISM
     protected override void MoveTarget()
     {
         if (transform.position.x <= minPosition.x)

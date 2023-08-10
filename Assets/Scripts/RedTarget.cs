@@ -27,6 +27,7 @@ public class RedTarget : BaseTarget //INHERITANCE
         MoveTarget();
     }
 
+    //POLYMORPHISM
     protected override void MoveTarget()
     {
         if (transform.position.x <= minPosition.x && transform.position.y <= minPosition.y)
