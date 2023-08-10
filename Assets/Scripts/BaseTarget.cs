@@ -35,6 +35,7 @@ public abstract class BaseTarget : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Counter.Instance.count += 1;
         Destroy(gameObject);
     }
 }
