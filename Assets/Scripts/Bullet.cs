@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    private float xBound = 35.0f;
+    private float yBound = 10.0f;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,11 +17,9 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(gameObject);
+        if (transform.position.x >= xBound || transform.position.x <= -xBound || transform.position.y >= yBound || transform.position.y <= -yBound)
+        {
+            Destroy(gameObject);
+        }
     }
 }
